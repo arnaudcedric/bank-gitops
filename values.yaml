@@ -27,7 +27,7 @@ backend:
 
   image:
     repository: ghcr.io/arnaudcedric/backend_bankapp_springboot
-    tag: "80e38ed"
+    tag: "6ffcba5"
     pullPolicy: IfNotPresent
 
   service:
