@@ -220,3 +220,36 @@ builtin objects
 .Files
 
 .Capabilities
+
+made changes in the remote github 
+make change on my local
+git pull --rebase origin main
+git push origin main
+
+kubectl create secret docker-registry ghcr-secret \
+  --docker-server=ghcr.io \
+  --docker-username=arnaudcedric \
+  --docker-password=<YOUR_PAT> \
+  --docker-email=<YOUR_GITHUB_EMAIL> \
+  -n dev
+
+  kubectl create secret docker-registry ghcr-secret \
+  --docker-server=ghcr.io \
+  --docker-username=arnaudcedric \
+  --docker-password=<YOUR_PAT> \
+  --docker-email=<YOUR_GITHUB_EMAIL> \
+  -n qa
+
+kubectl create secret docker-registry ghcr-secret \
+  --docker-server=ghcr.io \
+  --docker-username=arnaudcedric \
+  --docker-password=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 \
+  --docker-email=cedrcarno@gmail.com \
+  -n dev
+
+kubectl create secret docker-registry ghcr-secret \
+  --docker-server=ghcr.io \
+  --docker-username=arnaudcedric \
+  --docker-password=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 \
+  --docker-email=cedrcarno@gmail.com \
+  -n qa
