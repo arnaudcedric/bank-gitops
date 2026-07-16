@@ -258,4 +258,16 @@ kubectl create secret docker-registry ghcr-secret \
 
   ImagePullBackOff mean k8s not able to pull image
 
+  kubectl get pods -A
+
+  kubectl get pods -n dev
+
+  kubectl port-forward svc/frontend-service 3000:80 -n dev
+
+  127.0.0.1:3000
+
+get service for namespace dev
+  kubectl get svc -n dev
+
+  kubectl port-forward svc/backend-service 8080:8080 -n dev
   
