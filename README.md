@@ -243,13 +243,19 @@ kubectl create secret docker-registry ghcr-secret \
 kubectl create secret docker-registry ghcr-secret \
   --docker-server=ghcr.io \
   --docker-username=arnaudcedric \
-  --docker-password=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 \
-  --docker-email=cedrcarno@gmail.com \
+  --docker-password=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 \
+  --docker-email=cedricarno@gmail.com \
   -n dev
 
 kubectl create secret docker-registry ghcr-secret \
   --docker-server=ghcr.io \
   --docker-username=arnaudcedric \
-  --docker-password=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 \
-  --docker-email=cedrcarno@gmail.com \
+  --docker-password=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 \
+  --docker-email=cedricarno@gmail.com \
   -n qa
+
+  kubectl get deployment backend -n dev -o yaml | grep -A5 imagePullSecret
+
+  ImagePullBackOff mean k8s not able to pull image
+
+  
