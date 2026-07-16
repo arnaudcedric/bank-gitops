@@ -4,7 +4,6 @@ frontend:
     repository: ghcr.io/arnaudcedric/phegonbank-frontend
     tag: "sha-033593d"
   
-
 backend:
   replicaCount: 2
   image:
@@ -15,4 +14,4 @@ mysql:
   replicaCount: 1
 
 ingress:
-  enabled: false
+  host: qa.bank.local

@@ -14,4 +14,4 @@ mysql:
   replicaCount: 1
 
 ingress:
-  enabled: false
+  host: dev.bank.local
