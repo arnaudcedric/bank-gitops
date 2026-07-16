@@ -1,7 +1,7 @@
 frontend:
   replicaCount: 3
   image:
-    repository: ghcr.io/arnaudcedric/backend_bankapp_springboot
+    repository: ghcr.io/arnaudcedric/phegonbank-frontend
     tag: "sha-1021e26"
     pullPolicy: IfNotPresent
   service:
