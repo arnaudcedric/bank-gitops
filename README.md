@@ -271,3 +271,14 @@ get service for namespace dev
 
   kubectl port-forward svc/backend-service 8080:8080 -n dev
   
+  minikube addons enable ingress
+
+  to access the app
+  minikube service ingress-nginx-controller -n ingress-nginx --url
+
+  https://chatgpt.com/c/6a591d0f-c428-83ea-886a-4e5b86489e89
+  Yes, and this is the "aha!" moment that makes Ingress click for most people.
+
+The Ingress doesn't tell the frontend where to go. The browser sends the request to the Ingress, and the Ingress decides where to send it.
+
+Let's walk through exactly what happened.
