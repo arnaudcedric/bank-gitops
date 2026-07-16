@@ -1,4 +1,3 @@
-
 # bank-gitops
 bank gitops for argo-cd
 
@@ -205,18 +204,3 @@ helm upgrade bank-dev . -f values-dev.yaml -n dev
 helm rollback bank-dev 2 -n dev
 
 helm rollback <release-name> <revision-number> -n <namespace>
-
-builtin objects
-.Release.Name
-
-.Release.Namespace
-
-.Chart.Name
-
-.Chart.Version
-
-.Values
-
-.Files
-
-.Capabilities

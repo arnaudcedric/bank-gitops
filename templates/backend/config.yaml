@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+
+metadata:
+  name: backend-config
+  namespace: {{ .Release.Namespace }}
+
+data:
+  LOCAL_DB_URL: "jdbc:mysql://mysql-service:{{ .Values.mysql.service.port }}/{{ .Values.backend.config.databaseName }}"
+  PORT: "{{ .Values.backend.env.port }}"
+  JWT_EXPIRATION_TIME: "{{ .Values.backend.env.jwtExpirationTime }}"
+  AWS_BUCKET_NAME: "{{ .Values.backend.config.bucketName }}"

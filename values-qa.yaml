@@ -1,0 +1,14 @@
+frontend:
+  replicaCount: 2
+
+backend:
+  replicaCount: 2
+  image:
+    repository: backend
+    tag: qa
+
+mysql:
+  replicaCount: 1
+
+ingress:
+  enabled: false

@@ -1,0 +1,13 @@
+namespace: pre-prod
+
+frontend:
+  replicaCount: 3
+
+backend:
+  replicaCount: 3
+
+mysql:
+  replicaCount: 1
+
+ingress:
+  enabled: false
