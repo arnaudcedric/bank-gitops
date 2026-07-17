@@ -7,7 +7,7 @@ backend:
   replicaCount: 1
   image:
     repository: ghcr.io/arnaudcedric/backend_bankapp_springboot
-    tag: "b1501c3"
+    tag: "0ce9e6d"
 mysql:
   replicaCount: 1
 ingress:
