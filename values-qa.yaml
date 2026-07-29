@@ -1,11 +1,11 @@
 frontend:
-  replicaCount: 1
+  replicaCount: 3
   image:
     repository: ghcr.io/arnaudcedric/phegonbank-frontend
     tag: "sha-033593d"
   
 backend:
-  replicaCount: 1
+  replicaCount: 2
   image:
     repository: ghcr.io/arnaudcedric/backend_bankapp_springboot
     tag: "6ffcba5"
